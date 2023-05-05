@@ -1,0 +1,244 @@
+#produkt {
+    max-width: 90vw;
+    margin: auto;
+
+    .siteStatus {
+        text-align: center;
+        margin-top: 2vh;
+        color: grey;
+
+        @include desktop {
+            font-size: 0.5em;
+        }
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "a a a"
+            "b b b"
+            "c c c"
+            "d d d"
+            "e e e"
+            "f f f"
+            "g g g";
+
+        @include desktop {
+            margin-top: 10vh;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-areas:
+                "a a a a b b b b"
+                "d d d d b b b b"
+                "d d d d b b b b"
+                "d d d d b b b b"
+                "d d d d b b b b"
+                "e e e e b b b b"
+                "f f f f b b b b"
+                "g g g g c c c c";
+        }
+
+        .header {
+            grid-area: a;
+            margin-top: 2vh;
+            font-size: 10vw;
+            text-align: center;
+
+            @include desktop {
+                font-size: 5vw;
+                text-align: left;
+            }
+        }
+
+        .bigPicture {
+            grid-area: b;
+            max-width: 90vw;
+            margin-top: 2vh;
+            border-radius: 1em;
+
+            @include desktop {
+                max-width: 35vw;
+            }
+        }
+
+        .smallPictures {
+            grid-area: c;
+            max-width: 90vw;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2vh;
+
+            @include desktop {
+                max-width: 35vw;
+            }
+
+
+            .smallPicture {
+                max-width: 20vw;
+                border-radius: 1em;
+
+                @include desktop {
+                    max-width: 10vw;
+                }
+            }
+        }
+
+
+        .produktInfo {
+            grid-area: d;
+            font-family: "lato";
+            margin-top: 2vh;
+            line-height: 1.3em;
+            letter-spacing: 0.02em;
+            font-size: 4vw;
+            font-weight: normal;
+
+            @include desktop {
+                font-size: 0.5em;
+                margin-right: 1vw;
+                
+            }
+        }
+
+        .lagerStatus {
+            grid-area: e;
+            font-family: "lato";
+            margin-top: 1vh;
+            font-size: 5vw;
+            font-weight: normal;
+
+            @include desktop {
+                font-size: 0.7em;
+            }
+        }
+
+        .produktPris {
+            grid-area: f;
+            font-family: "lato";
+            margin-top: 1vh;
+            font-size: 8vw;
+            font-weight: bold;
+
+            @include desktop {
+                font-size: 0.8em;
+                margin-top: 0;
+            }
+        }
+
+        .addToBasket {
+            grid-area: g;
+            margin-top: 2vh;
+            cursor: pointer;
+            background-color: $dark;
+            box-shadow: rgba(0, 0, 0, 0.3) 0 5px 10px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            padding: 1vh 3vw;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            
+            @include desktop {
+                max-width: 40vw;
+                max-height: 10vh;
+            }
+
+            &:hover {
+                color: black;
+                background-image: linear-gradient(rgb(250, 222, 169),
+                        rgb(255, 179, 89),
+                        rgb(222, 125, 6));
+                text-shadow: rgb(255, 255, 255) 0px 2px 5px;
+            }
+        }
+    }
+
+    .produktBeskrivning {
+        margin-top: 5vh;
+        display: grid;
+        grid-template-areas:
+            "a"
+            "e"
+            "b"
+            "c"
+            "d";
+
+        @include desktop {
+            max-width: 90vw;
+            margin: 1em auto;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas:
+                "a b c d"
+                "e e e e";
+        }
+
+        .beskrivningBox {
+            padding: 2vh 4vw;
+            background-color: grey;
+            text-align: center;
+            font-size: 5vw;
+
+            @include desktop {
+                font-size: 0.5em;
+                font-weight: bold;
+            }
+        }
+
+        .beskrivning {
+            grid-area: a;
+        }
+
+        .produktDemo {
+            grid-area: b;
+        }
+
+        .recensioner {
+            grid-area: c;
+        }
+
+        .quesiton {
+            grid-area: d;
+        }
+
+        .text {
+            grid-area: e;
+            padding: 3vh 2vw;
+            background-color: lightgray;
+            font-family: "lato";
+
+            @include desktop {
+                font-size: 0.5em;
+            }
+        }
+    }
+}
+
+#related {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 15vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 30vw;
+    row-gap: 18vw;
+
+    @include desktop {
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 5vw;
+        margin-left: 4vw;
+        margin-right: 4vw;
+        margin-bottom: 4vw;
+        column-gap: 1vw;
+    }
+}
+
+.relatedProducts {
+    h4 {
+        margin-top: 5vh;
+        font-size: 5vw;
+        text-align: center;
+    }
+}

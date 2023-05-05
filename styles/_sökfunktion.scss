@@ -1,0 +1,66 @@
+.sök_texter {
+    display: flex;
+    margin: 5vh 5vw;
+
+    h4 {
+        font-size: 1.5em;
+        margin: 2vh 0;
+    }
+
+    .sök_text {
+        width: 50%;
+        font-size: 0.4em;
+        margin-right: 5vw;
+        
+    }
+
+    .sök_text1 {
+        width: 50%;
+        font-size: 0.4em;
+    }
+}
+
+.sök_text2 {
+    display: block;
+    font-size: 0.4em;
+    margin: 4vh 5vw;
+}
+
+.history {
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    text-align: center;
+    
+    a {
+        color: #000;
+        font-size: 0.5em;
+    }
+
+    a:hover {
+        color: rgb(255, 179, 89);
+    }
+}
+
+@media (max-width: 500px) {
+    .sök_texter {
+        display: block;
+
+        h4 {
+            font-size: 1.5em;
+        }
+
+        .sök_text {
+            font-size: 1em;
+            width: 100%;
+        }
+
+        .sök_text1 {
+            font-size: 1em;
+            width: 100%;
+        }
+    }
+
+    .sök_text2 {
+        font-size: 1em;
+    }
+}

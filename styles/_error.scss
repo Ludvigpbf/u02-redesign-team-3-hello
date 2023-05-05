@@ -1,0 +1,28 @@
+.hero-error-img {
+  display: flex;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.612), rgba(0, 0, 0, 0.612)),
+    url("../assets/imgs/under-construction_geek_woman.svg");
+  height: 80vh;
+  .hero-error-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: "lato";
+    text-align: center;
+    text-shadow: black 0px 2px 10px;
+    font-size: 7vw;
+    @include desktop {
+      font-size: 3vw;
+      h1 {
+        width: 40vw;
+      }
+    }
+  }
+}

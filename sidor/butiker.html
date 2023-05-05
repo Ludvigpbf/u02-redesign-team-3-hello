@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ludvig, Amilia, Saliem, Walle, Hamma">
+    <meta name="description" content="Instrument webshop">
+    <meta name="keywords" content="gitarr, elgitarr, bas, elbas, instrument, förstärkare, strängar, musik">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Jam</title>
+    <!-- font links -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
+
+    <!-- Icon links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <header>
+        <!-- Det här är den öv%ersta remsan -->
+        <div class="top-bar">
+            <div class="top-text">
+                <p>Säker och gratis frakt från 500 SEK</p><img class="icons" src="../assets//icons/paket.svg"
+                    alt="paket">
+            </div>
+            <div class="top-text">
+                <p>Handla online och hämta i butik</p><img class="icons" src="../assets/icons/hus.svg" alt="hus">
+            </div>
+            <div class="top-text">
+                <a href="../butiker.html">Hitta butiker<img class="icons" src="../assets/icons/karta.svg"
+                        alt="karta"></a>
+
+            </div>
+        </div>
+
+        <!-- Det här är mellersta sectionen med searchbaren -->
+
+        <div class="mid-bar">
+            <a class="logo-link" href="../index.html"><img class="logo" src="../assets/Logo/Logo_Svart_200px.svg"
+                    alt="jam-logga"></a>
+            <div id="icons-links">
+                <a href="../sidor/error.html"><img class="icons-midbar" src="../assets/icons/user.svg"
+                        alt="mitt-konto"></a>
+                <a href="../sidor/error.html"><img class="icons-midbar" src="../assets/icons/hjärta.svg"
+                        alt="favoriter"></a>
+                <a href="../sidor/error.html"><img class="icons-midbar" src="../assets/icons/kundkorg.svg"
+                        alt="kundkorg"></a>
+
+                <!-- Navbar till mobil -->
+
+                <nav id="phone-nav">
+                    <!-- Hamburgar button start -->
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    <!-- Hamburgar button slut -->
+
+                    <!-- Meny Länkar start -->
+                    <ul>
+                        <li><a href="../index.html">Startsida</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="../sidor/våra_produkter.html">Våra produkter
+                                    <i class="fa-solid fa-caret-left" id="arrow"></i>
+                                </a>
+                                <div class="dropdown-content">
+                                    <a href="../sidor/elgitarrer.html">Elgitarr</a>
+                                    <a href="../sidor/elbasar.html">Elbas</a>
+                                    <a href="../sidor/error.html">Strängar</a>
+                                    <a href="../sidor/error.html">Förstärkare</a>
+                                    <a href="../sidor/error.html">Tillbehör</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="../sidor/butiker.html">Våra butiker</a></li>
+                        <li><a href="../sidor/gitarrbyggarcentrum.html">Gitarrbyggarcentrum</a></li>
+                        <li><a href="../sidor/kontakta-oss.html">Kontakta oss</a></li>
+                        <li><a href="../sidor/om-oss.html">Om oss</a></li>
+                        <li><a href="../sidor/sökfunktionen.html">Sökfunktion - Så funkar det</a></li>
+                    </ul>
+                    <!-- Meny Länkar Slut -->
+                </nav>
+
+                <!-- Searchbar -->
+            </div>
+            <div id="searchbar">
+                <input type="text" placeholder="Vad söker du?">
+                <a href="sökfunktionen.html"><img class="icons-midbar" src="../assets/icons/info.svg" alt="info"></a>
+            </div>
+        </div>
+
+        <!-- Här är navbaren till desktop -->
+
+        <nav id="desktop-nav">
+            <a href="../index.html">Startsida</a>
+            <div class="dropdown">
+                <a href="../sidor/våra_produkter.html">Våra produkter</a><img class="icons" id="drpdwn"
+                    src="../assets/icons/drpdwn-arrow-closed.svg" alt="arrow-icon">
+                <div class="dropdown-content">
+                    <a href="../sidor/elgitarrer.html">Elgitarr</a>
+                    <a href="../sidor/elbasar.html">Elbas</a>
+                    <a href="../sidor/error.html">Strängar</a>
+                    <a href="../sidor/error.html">Förstärkare</a>
+                    <a href="../sidor/error.html">Tillbehör</a>
+                </div>
+            </div>
+            <a href="../sidor/butiker.html">Våra butiker</a>
+            <a href="../sidor/gitarrbyggarcentrum.html">Gitarrbyggarcentrum</a>
+            <a href="../sidor/kontakta-oss.html">Kontakta oss</a>
+            <a href="../sidor/om-oss.html">Om oss</a>
+            <a href="../sidor/sökfunktionen.html">Sökfunktion - Så funkar det</a>
+        </nav>
+    </header>
+
+    <!-- Här är hero sectionen -->
+    <section>
+        <div class="hero-img">
+            <div class="hero-text">
+                <h1>Våra butiker</h1>
+            </div>
+        </div>
+    </section>
+    <!-- Butiker -->
+    <section id="butiker">
+        <h2>Hitta oss här!</h2>
+        <div class="butiker">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2034.1643580581908!2d18.05693798065531!3d59.34690421674496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d6c15a5166f%3A0xdc5a2390c8fcb6f2!2sRoslagsgatan%2019%2C%20113%2055%20Stockholm!5e0!3m2!1ssv!2sse!4v1668382864535!5m2!1ssv!2sse"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                title="google map"></iframe>
+
+            <div class="info">
+                <h2>Roslagsgatan 19 <br>11355 Stockholm</h2>
+                <h3>Öppettider</h3>
+                <p>Mån-Fre: 12-18<br>Lör: 12-16</p>
+                <h3>JAM Studio och Syntotek</h3>
+                <p>Tel. 08-612 21 23</p>
+                <h3>JAM Webshop/Postorder</h3>
+                <p>Tel. 08-612 21 23</p>
+                <a href="../sidor/kontakta-oss.html">Kontakta oss!</a>
+            </div>
+        </div>
+
+        <div class="butiker">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2034.2384903890832!2d18.058105916229167!3d59.345666716754444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d6c00592bed%3A0xf2481bbc11c7dd81!2sRoslagsgatan%207%2C%20113%2055%20Stockholm!5e0!3m2!1ssv!2sse!4v1668420579503!5m2!1ssv!2sse"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                title="google map"></iframe>
+
+            <div class="info">
+                <h2>Roslagsgatan 7 <br>11355 Stockholm</h2>
+                <h3>Öppettider</h3>
+                <p>Mån-Fre: 12-18<br>Lör: 12-16</p>
+                <h3>JAM Gitarrer</h3>
+                <p>Tel. 08-410 510 90</p>
+                <a href="../sidor/kontakta-oss.html">Kontakta oss!</a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+        <!-- Översta delen av footern -->
+        <section id="firfooter">
+            <h2>Nyhetsbrev</h2>
+            <button type="button" onclick="alert('Tack för din prenumeration')">Prenumerera</button>
+            <h2>Följ oss</h2>
+            <div id="social">
+                <a href="../sidor/error.html"><img src="../assets/icons/insta.svg" alt="instagram"></a>
+                <a href="../sidor/error.html"><img src="../assets/icons/fb.svg" alt="facebook"></a>
+                <a href="../sidor/rror.html"><img src="../assets/icons/tiktok.svg" alt="tiktok"></a>
+            </div>
+        </section>
+        <!-- Nedersta delen av footern -->
+        <section id="secfooter">
+            <div id="bottom">
+                <div class="footer-text">
+                    <ul>
+                        <li>
+                            <h2>Information</h2>
+                        </li>
+                        <li><a href="../sidor/error.html">Om butiken</a></li>
+                        <li><a href="../sidor/error.html">Service &amp; reparationer</a></li>
+                        <li><a href="../sidor/error.html">Köpvilkor</a></li>
+                        <li><a href="../sidor/error.html">Vi använder Klarna Checkout</a></li>
+                        <li id="indent-list">- Läs mer om Klarnas dataskyddspolicy <a
+                                href="../sidor/error.html">här!</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-text">
+                    <ul>
+                        <li>
+                            <h2>Mitt konto</h2>
+                        </li>
+                        <li><a href="../sidor/error.html">Mitt konto</a></li>
+                        <li><a href="../sidor/error.html">Kundinformation</a></li>
+                        <li><a href="../sidor/error.html">Mina ordrar</a></li>
+                        <li><a href="../sidor/error.html">Mina adresser</a></li>
+                    </ul>
+                </div>
+                <div class="footer-text">
+                    <ul>
+                        <li>
+                            <h2>Hitta oss</h2>
+                        </li>
+                        <li><a href="../sidor/butiker.html">Våra butiker</a></li>
+                        <li><a href="../sidor/kontakta-oss.html">Kontakta oss</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-text">
+                    <ul>
+                        <li>
+                            <h2>Öppettider</h2>
+                        </li>
+                        <li>Måndag-fredag: 12-18</li>
+                        <li>Lördag: 11-16</li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="copy-text">
+            <p>© 1996-2022 Jam.se</p>
+        </div>
+    </footer>
+</body>
+
+</html>

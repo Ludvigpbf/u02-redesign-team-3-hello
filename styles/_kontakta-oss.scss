@@ -1,0 +1,35 @@
+@import "_mixins";
+
+/* Här är kontakta oss formulär section */
+form {
+    @include flexCenter(column);
+    width: 80%;
+    margin: 10vh auto;
+    justify-content: center;
+
+    h2 {
+      font-size: 3vw;
+      margin: auto;
+      padding-bottom: 2vh;
+    }
+
+    input, select {
+      width: 90%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      @extend input;
+      font-family: 'Lato', sans-serif;
+      height: 200px
+    }
+
+    button {
+      @include blackButton;
+      margin: 8px 0;
+    }
+  }

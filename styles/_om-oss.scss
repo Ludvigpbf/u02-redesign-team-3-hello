@@ -1,0 +1,148 @@
+#om-oss {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  #bilden {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    img {
+      border-radius: 1em;
+      box-shadow: rgba(0, 0, 0, 0.385) 0px 10px 20px;
+      margin-top: 5vh;
+      max-width: 90vw;
+      @include desktop {
+        margin-top: 10vh;
+        min-width: 40vw;
+      }
+    }
+    h3 {
+      font-size: 4vw;
+      color: rgb(153, 153, 153);
+      margin-top: 2vh;
+      @include desktop {
+        font-size: 1vw;
+      }
+    }
+  }
+  article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 80vw;
+    @include desktop {
+      flex-direction: row;
+      min-height: 60vh;
+      justify-content: space-around;
+      margin-top: 5vh;
+      .text-box {
+        display: flex;
+        max-width: 35vw;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+    }
+    p {
+      margin: 0;
+    }
+    .texten {
+      font-family: "lato";
+      margin-top: 4vh;
+      line-height: 1.3em;
+      font-size: 5vw;
+      font-weight: normal;
+      h2 {
+        font-size: 4vw;
+        @include desktop {
+          font-size: 2vw;
+        }
+      }
+      @include desktop {
+        line-height: 2.5vh;
+        font-size: 1.1vw;
+        padding: 1vw;
+        border-radius: 1em;
+        font-weight: 600;
+        margin-top: 0;
+        height: 35vh;
+      }
+    }
+    #scroll-text {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      #click {
+        display: none;
+        &:checked ~ .mer-texten {
+          display: flex;
+        }
+        &:not(:checked) ~ .mer-texten {
+          display: none;
+          @include desktop {
+            display: flex;
+          }
+        }
+        &:checked ~ label:after {
+          content: " -";
+        }
+        & ~ label {
+          #se-mindre {
+            display: none;
+          }
+        }
+        &:checked ~ label {
+          #se-mer {
+            display: none;
+          }
+        }
+        &:checked ~ label {
+          #se-mindre {
+            display: inline;
+          }
+        }
+      }
+
+      label {
+        background-color: black;
+        color: white;
+        font-family: "lato";
+        font-size: 5vw;
+        padding: 0.3em;
+        border-radius: 0.3em;
+        width: 30vw;
+        margin-top: 2vh;
+        cursor: pointer;
+        text-align: center;
+        @include desktop {
+          display: none;
+        }
+        &:hover {
+          color: orange;
+        }
+        &::after {
+          content: " +";
+        }
+      }
+      .mer-texten {
+        font-family: "lato";
+        margin-top: 4vh;
+        line-height: 1.3em;
+        font-size: 5vw;
+        font-weight: normal;
+        @include desktop {
+          margin-top: 0;
+          display: flex;
+          line-height: 2.5vh;
+          font-size: 1.1vw;
+          padding: 1vw;
+          border-radius: 1em;
+          font-weight: 600;
+          height: 35vh;
+        }
+      }
+    }
+  }
+}

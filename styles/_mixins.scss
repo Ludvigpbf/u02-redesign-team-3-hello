@@ -1,0 +1,31 @@
+@mixin flexCenter($direction) { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+  }
+  
+  @mixin blackButton {
+      cursor: pointer;
+      background-color: $dark; 
+      box-shadow: rgba(0, 0, 0, 0.3) 0 5px 10px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      padding: 1vh 3vw;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1rem;
+      font-weight: bold;
+
+      &:hover {
+        color: black;
+        background-image: linear-gradient(
+          rgb(250, 222, 169),
+          rgb(255, 179, 89),
+          rgb(222, 125, 6)
+        );
+        text-shadow: rgb(255, 255, 255) 0px 2px 5px;
+      }
+  }

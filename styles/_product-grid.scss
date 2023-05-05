@@ -1,0 +1,120 @@
+#collection {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 15vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 30vw;
+    row-gap: 18vw;
+
+    @include desktop {
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 5vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-bottom: 4vw;
+        row-gap: 7vw;
+    }
+}
+
+.product {
+    position: relative;
+
+    .box {
+        border: 0.3vw solid rgba(128, 128, 128, 0.104);
+        border-radius: 0.5vw;
+        display: inline-block;
+
+        img {
+            height: 35vw;
+            width: 35vw;
+            margin: 3vw;
+            object-fit: contain;
+            transition: 0.1s ease-in-out;
+
+            @include desktop {
+                height: 19vw;
+                width: 19vw;
+                margin: 1.4vw;
+            }
+
+            &:hover {
+                transform: scale(1.1) translate(-1%, 1%);
+            }
+
+            &:focus {
+                transform: scale(1.1) translate(-1%, 1%);
+            }
+        }
+    }
+
+    .name {
+        p {
+            font-family: "lato";
+            font-size: 3vw;
+
+            @include desktop {
+                font-size: 1.2vw;
+            }
+
+            a {
+                width: 30vw;
+                word-wrap: break-word;
+                color: #000000;
+                text-decoration: none;
+                position: absolute;
+                top: 42vw;
+                left: 0.5vw;
+                right: 0;
+                transform: none;
+
+                @include desktop {
+                    width: 15vw;
+                    top: 23vw;
+                    left: 0.5vw;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    .price {
+        p {
+            font-family: "lato";
+            font-size: 3vw;
+            position: absolute;
+            top: 42vw;
+            left: 32vw;
+            right: 0;
+
+            @include desktop {
+                font-size: 1.7vw;
+                top: 23vw;
+                left: 16vw;
+                right: 0;
+            }
+        }
+    }
+
+    .stock {
+        font-family: "lato";
+        font-size: 3vw;
+        position: absolute;
+        top: -3.5vw;
+
+
+        @include desktop {
+            font-size: 1.3vw;
+            top: -1.7vw;
+        }
+
+         .instock {
+            color: green;
+        }
+
+        .outofstock {
+            color: red;
+        }
+    }
+}

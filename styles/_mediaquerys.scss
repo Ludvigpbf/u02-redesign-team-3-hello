@@ -1,0 +1,16 @@
+@mixin desktop {
+  @media screen and (min-width: 800px) {
+    @content;
+  }
+}
+@mixin scale {
+  transition: 0.1s ease-in-out;
+  &:hover {
+    transform: scale(1.1) translate(-1%, 1%);
+    color: rgb(255, 179, 89);
+  }
+  &:focus {
+    transform: scale(1.1) translate(-1%, 1%);
+    color: rgb(255, 179, 89);
+  }
+}
